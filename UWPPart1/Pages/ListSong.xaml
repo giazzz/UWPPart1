@@ -10,7 +10,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <!--<ListView ItemsSource="{x:Bind ListSong}" x:Name="MyListSong">
+        <ListView ItemsSource="{x:Bind ListSong}" x:Name="MyListSong">
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="entity:Song">
                     <StackPanel Margin="0, 10, 0, 10" Orientation="Horizontal" Tapped="StackPanel_Tapped" Tag="{Binding}">
@@ -26,6 +26,6 @@
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
-        </ListView>-->
+        </ListView>
     </Grid>
 </Page>
