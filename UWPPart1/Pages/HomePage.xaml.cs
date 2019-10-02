@@ -38,7 +38,7 @@ namespace UWPPart1.Pages
         private readonly List<(string Tag, Type Page)> _pages = new List<(string Tag, Type Page)>
         {
             ("upload", typeof(Upload)),
-            ("listsong", typeof(ListSong)),
+            ("listsong", typeof(List)),
 
         };
 

@@ -85,8 +85,8 @@
     <AppxPackagedFile Include="C:\Users\tvngi\source\repos\UWPPart1\UWPPart1\bin\x86\Debug\Pages\HomePage.xbf">
       <PackagePath>Pages\HomePage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvngi\source\repos\UWPPart1\UWPPart1\bin\x86\Debug\Pages\ListSong.xbf">
-      <PackagePath>Pages\ListSong.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\tvngi\source\repos\UWPPart1\UWPPart1\bin\x86\Debug\Pages\List.xbf">
+      <PackagePath>Pages\List.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tvngi\source\repos\UWPPart1\UWPPart1\bin\x86\Debug\Pages\Upload.xbf">
       <PackagePath>Pages\Upload.xbf</PackagePath>

@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\tvngi\source\repos\UWPPart1\UWPPart1\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-10-02T13:50:23.302</Modified>
+      <Modified>2019-10-02T14:25:02.215</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\tvngi\source\repos\UWPPart1\UWPPart1\bin\x86\Debug\UWPPart1.exe">
       <PackagePath>entrypoint\UWPPart1.exe</PackagePath>
-      <Modified>2019-10-02T13:50:22.739</Modified>
+      <Modified>2019-10-02T14:25:00.573</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tvngi\.nuget\packages\documentformat.openxml\2.9.1\lib\netstandard1.3\DocumentFormat.OpenXml.dll">
       <PackagePath>DocumentFormat.OpenXml.dll</PackagePath>
@@ -98,27 +98,27 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tvngi\source\repos\UWPPart1\UWPPart1\bin\x86\Debug\UWPPart1.xr.xml">
       <PackagePath>UWPPart1.xr.xml</PackagePath>
-      <Modified>2019-10-02T11:58:56.392</Modified>
+      <Modified>2019-10-02T14:25:00.235</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tvngi\source\repos\UWPPart1\UWPPart1\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-10-02T13:50:22.469</Modified>
+      <Modified>2019-10-02T14:25:00.282</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tvngi\source\repos\UWPPart1\UWPPart1\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-10-02T13:50:22.470</Modified>
+      <Modified>2019-10-02T14:25:00.282</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tvngi\source\repos\UWPPart1\UWPPart1\bin\x86\Debug\Pages\HomePage.xbf">
       <PackagePath>Pages\HomePage.xbf</PackagePath>
-      <Modified>2019-10-02T13:50:22.470</Modified>
+      <Modified>2019-10-02T14:25:00.282</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\tvngi\source\repos\UWPPart1\UWPPart1\bin\x86\Debug\Pages\ListSong.xbf">
-      <PackagePath>Pages\ListSong.xbf</PackagePath>
-      <Modified>2019-10-02T13:50:22.470</Modified>
+    <AppxPackagedFile Include="C:\Users\tvngi\source\repos\UWPPart1\UWPPart1\bin\x86\Debug\Pages\List.xbf">
+      <PackagePath>Pages\List.xbf</PackagePath>
+      <Modified>2019-10-02T14:25:00.283</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tvngi\source\repos\UWPPart1\UWPPart1\bin\x86\Debug\Pages\Upload.xbf">
       <PackagePath>Pages\Upload.xbf</PackagePath>
-      <Modified>2019-10-02T13:50:22.470</Modified>
+      <Modified>2019-10-02T14:25:00.283</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -126,11 +126,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tvngi\source\repos\UWPPart1\UWPPart1\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-10-02T13:17:39.925</Modified>
+      <Modified>2019-10-02T14:25:01.114</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\tvngi\source\repos\UWPPart1\UWPPart1\bin\x86\Debug\Core\UWPPart1.exe">
       <PackagePath>UWPPart1.exe</PackagePath>
-      <Modified>2019-10-02T13:50:23.302</Modified>
+      <Modified>2019-10-02T14:25:02.201</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

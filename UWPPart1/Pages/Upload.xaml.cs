@@ -1,7 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -30,43 +29,37 @@ namespace UWPPart1.Pages
     /// </summary>
     public sealed partial class Upload : Page
     {
-        private const string ApiUrl = "https://2-dot-backup-server-003.appspot.com/_api/v2/songs/get-free-songs";
-        private ObservableCollection<Song> ListSong { get; set; }
+        private const string ApiUrl = "https://2-dot-backup-server-003.appspot.com/_api/v2/songs/post-free";
         public Upload()
         {
             this.InitializeComponent();
-            this.ListSong = new ObservableCollection<Song>();
-            this.ListSong.Add(new Song()
-            {
-                name = "ABC",
-                singer = "ABC",
-                thumbnail = "ABC",
-                link = "abc"
-            });
-            var httpClient = new HttpClient();
-            Task<HttpResponseMessage> httpRequestMessage = httpClient.GetAsync(ApiUrl);
-            String responseContent = httpRequestMessage.Result.Content.ReadAsStringAsync().Result;
-            List<Song> listSong = JsonConvert.DeserializeObject<List<Song>>(responseContent);
-            foreach (Song item in listSong)
-            {
-                this.ListSong.Add(new Song()
-                {
-                    name = item.name,
-                    singer = item.singer,
-                    thumbnail = item.thumbnail,
-                    link = item.link
-                });
-            }
         }
-
-        private List<Song> getList()
+        private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
         {
-            var httpClient = new HttpClient();
-            Task<HttpResponseMessage> httpRequestMessage = httpClient.GetAsync(ApiUrl);
-            String responseContent = httpRequestMessage.Result.Content.ReadAsStringAsync().Result;
-            List<Song> listSong = JsonConvert.DeserializeObject<List<Song>>(responseContent);
-            return listSong;
-        }
 
+            var uploadSong = new Song
+            {
+                name = this.name.Text,
+                description = this.description.Text,
+                singer = this.singer.Text,
+                author = this.author.Text,
+                thumbnail = this.thumbnail.Text,
+                link = this.link.Text
+            };
+
+            var httpClient = new HttpClient();
+            //httpClient.DefaultRequestHeaders.Add("Authorization", "Basic " + token);
+            HttpContent content = new StringContent(JsonConvert.SerializeObject(uploadSong), Encoding.UTF8,
+                "application/json");
+
+            Task<HttpResponseMessage> httpRequestMessage = httpClient.PostAsync(ApiUrl, content);
+            String responseContent = httpRequestMessage.Result.Content.ReadAsStringAsync().Result;
+            Debug.WriteLine("Response: " + responseContent);
+
+            Song resSong = JsonConvert.DeserializeObject<Song>(responseContent);
+            Debug.WriteLine("Singer: " + resSong.singer);
+
+
+        }
     }
 }
