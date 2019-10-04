@@ -10,23 +10,71 @@
 
     <ScrollViewer Margin="20">
         <StackPanel Margin="50" HorizontalAlignment="Left" VerticalAlignment="Top">
-            <TextBlock>Name</TextBlock>
-            <TextBox x:Name="name"></TextBox>
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="200"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Text="Name"/>
+                <TextBox Grid.Column='1' x:Name="name"></TextBox>
+                <TextBlock Grid.Column="2" x:Name="name_er"></TextBlock>
+            </Grid>
 
-            <TextBlock>Description</TextBlock>
-            <TextBox x:Name="description" Width="200"></TextBox>
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="200"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Text="Description"/>
+                <TextBox Grid.Column='1' x:Name="description"></TextBox>
+                <TextBlock Grid.Column="2" x:Name="description_er"></TextBlock>
+            </Grid>
 
-            <TextBlock>Singer</TextBlock>
-            <TextBox x:Name="singer"></TextBox>
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="200"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Text="Singer"/>
+                <TextBox Grid.Column='1' x:Name="singer"></TextBox>
+                <TextBlock Grid.Column="2" x:Name="singer_er"></TextBlock>
+            </Grid>
 
-            <TextBlock>Author</TextBlock>
-            <TextBox x:Name="author" Width="200"></TextBox>
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="200"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Text="Author"/>
+                <TextBox Grid.Column='1' x:Name="author"></TextBox>
+                <TextBlock Grid.Column="2" x:Name="author_er"></TextBlock>
+            </Grid>
 
-            <TextBlock>Thumbnail</TextBlock>
-            <TextBox x:Name="thumbnail"></TextBox>
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="200"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Text="Thumbnail"/>
+                <TextBox Grid.Column='1' x:Name="thumbnail"></TextBox>
+                <TextBlock Grid.Column="2" x:Name="thumbnail_er"></TextBlock>
+            </Grid>
 
-            <TextBlock>Link</TextBlock>
-            <TextBox x:Name="link" Width="200"></TextBox>
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="200"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Text="Link"/>
+                <TextBox Grid.Column='1' x:Name="link"></TextBox>
+                <TextBlock Grid.Column="2" x:Name="link_er"></TextBlock>
+            </Grid>
 
             <Button Click="ButtonBase_OnClick">Upload</Button>
         </StackPanel>

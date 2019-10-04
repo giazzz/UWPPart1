@@ -10,25 +10,73 @@
 
     <ScrollViewer Margin="20">
         <StackPanel Margin="50" HorizontalAlignment="Left" VerticalAlignment="Top">
-            <TextBlock>Name</TextBlock>
-            <TextBox x:ConnectionId='2' x:Name="name"></TextBox>
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="200"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Text="Name"/>
+                <TextBox x:ConnectionId='13' Grid.Column='1' x:Name="name"></TextBox>
+                <TextBlock x:ConnectionId='14' Grid.Column="2" x:Name="name_er"></TextBlock>
+            </Grid>
 
-            <TextBlock>Description</TextBlock>
-            <TextBox x:ConnectionId='3' x:Name="description" Width="200"></TextBox>
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="200"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Text="Description"/>
+                <TextBox x:ConnectionId='11' Grid.Column='1' x:Name="description"></TextBox>
+                <TextBlock x:ConnectionId='12' Grid.Column="2" x:Name="description_er"></TextBlock>
+            </Grid>
 
-            <TextBlock>Singer</TextBlock>
-            <TextBox x:ConnectionId='4' x:Name="singer"></TextBox>
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="200"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Text="Singer"/>
+                <TextBox x:ConnectionId='9' Grid.Column='1' x:Name="singer"></TextBox>
+                <TextBlock x:ConnectionId='10' Grid.Column="2" x:Name="singer_er"></TextBlock>
+            </Grid>
 
-            <TextBlock>Author</TextBlock>
-            <TextBox x:ConnectionId='5' x:Name="author" Width="200"></TextBox>
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="200"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Text="Author"/>
+                <TextBox x:ConnectionId='7' Grid.Column='1' x:Name="author"></TextBox>
+                <TextBlock x:ConnectionId='8' Grid.Column="2" x:Name="author_er"></TextBlock>
+            </Grid>
 
-            <TextBlock>Thumbnail</TextBlock>
-            <TextBox x:ConnectionId='6' x:Name="thumbnail"></TextBox>
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="200"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Text="Thumbnail"/>
+                <TextBox x:ConnectionId='5' Grid.Column='1' x:Name="thumbnail"></TextBox>
+                <TextBlock x:ConnectionId='6' Grid.Column="2" x:Name="thumbnail_er"></TextBlock>
+            </Grid>
 
-            <TextBlock>Link</TextBlock>
-            <TextBox x:ConnectionId='7' x:Name="link" Width="200"></TextBox>
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="200"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" Text="Link"/>
+                <TextBox x:ConnectionId='3' Grid.Column='1' x:Name="link"></TextBox>
+                <TextBlock x:ConnectionId='4' Grid.Column="2" x:Name="link_er"></TextBlock>
+            </Grid>
 
-            <Button x:ConnectionId='8'                           >Upload</Button>
+            <Button x:ConnectionId='2'                           >Upload</Button>
         </StackPanel>
     </ScrollViewer>
 </Page>
